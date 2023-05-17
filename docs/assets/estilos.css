@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    
+    font-family: "Cooper black", sans-serif;   
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+
+    
+    
+} 
+
+h2,h3{
+    text-align: center;
+    margin:30px;
+    font-size:2em ;
+}
+
+
+header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    background-color: black;
+}
+.menu img{
+    margin-left: 5px;
+    margin-top: 0;
+    width: 9vw;
+    height: 10vh;
+    align-content: center;
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+ul{
+    list-style: none;
+    display: flex;  
+    
+
+    align-items: center;
+}
+li{
+    margin: 0 40px;
+    align-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+a:hover{
+    color:deeppink;
+}
+
+/* MAIN  */
+h1{
+    font-size: 3em;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: justify;
+    margin-top: 80px;
+    width: 100vw;
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.titulo{
+    text-align: center;
+    margin: 30px;
+}
+
+.bibliografia,.iniciosMusicales{
+    align-content: center;
+    text-align: center;
+
+    
+}
+.bibliografia img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 5);
+    width: 20vw;
+}
+.bibliografia p{
+    margin-top: 20px;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* aside */
+aside{
+    background-image: url("fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.iniciosMusicales h2,h3{
+    text-align: center;
+    margin:30px;
+    font-size:2em ;
+}
+.iniciosMusicales img{
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 5);
+    width: 15vw;
+    height: 40vh;
+    margin: 20px;
+}
+
+.iniciosMusicales p,li{
+    align-content: center;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+/* videos */
+
+.videos{
+    
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.videos video{
+    align-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+
+}
+
+/* videos */
+
+.albumes{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.albumes img{
+    width: 15vw;
+    height: 25vh;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+    margin-bottom: 20px;
+}
+.album2{
+    text-align: center;
+}
+
+/* footer */
+footer{
+    background-image: url("footer.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+input{
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+button{
+    margin-top: 20px;
+    display: inline-block;
+    background-color: deeppink;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+button:hover{
+    
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0,5);
+}
+footer p{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* menu Hamburguesa */
+.menuIcono,#check{
+    display: none;
+   
+}
+
+
+@media screen and (max-width: 508px) {
+    
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        
+        
+    }
+
+    ul{ 
+        position: fixed;
+        flex-direction: column; 
+        top: 70px;
+        left: -100%;
+        width: 100vw;
+        height: 100vh;
+        right: 0;
+        background-color: rgba(33, 31, 27, 0.923);
+        color: white;
+
+    }
+    ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        
+    }
+    ul li a{
+        color: white;
+    }
+    
+    .checkbtn{
+        display: block;
+        
+        
+    }
+    
+    .checkbtn img{
+        width: 30px;
+        right: 0;
+    }
+    .menuIcono{
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        filter: invert(1);
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    .menu .logo{
+        width: 20vw;
+        height: 10vh;
+
+    }
+
+    .logo{
+        margin-top: 0;
+        width: 50vw;
+        height: 20vh;
+
+    }
+
+    main{
+        margin-top: 20px;
+    }
+    .titulo {
+        margin-top: 30px;
+    }
+    .bibliografia img {
+        width: 70vw;
+    }
+    .iniciosMusicales img {
+        width: 80vw;
+        height: 20vh;
+    }
+    .videos video {
+        width: 90vw;
+        height: auto;
+    }
+    .albumes img {
+        width: 70vw;
+        height: 15vh;   
+    } 
+}
+
+
